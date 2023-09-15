@@ -1,0 +1,30 @@
+body{
+    background-color: black;
+}
+
+.flexContainer{
+    display: flex;
+}
+
+a{
+    color: white;
+}
+.div1{
+   width: 20%;
+}
+.div2{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+ }
+ .div3{
+    display: flex;
+    width: 30%;
+    justify-content: flex-end;
+ }
+ img{
+    height: 80px;
+    width: 130px;
+    vertical-align: top;
+ }
+ 
