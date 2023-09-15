@@ -29,10 +29,7 @@ figure{
     
 }
 
-.flexContainerI{
-    display: flex;
-    
-}
+
 .divIzq{
     width: 65%;
     background-color:yellow ;
@@ -43,9 +40,7 @@ figure{
     background-color: violet;
 }
 
-.flexContainerII{
-    display: flex;
-}
+
 
 div>h4{
     margin-top: 0%;
@@ -55,4 +50,20 @@ div>h4{
 div>p{
 
  text-align: center;
+}
+
+.divFondoIzq{
+    width: 50%;
+}
+
+.imagenTamaño{
+    width: 100px;
+    height: 100px;
+}
+
+.flexContainerSpaceAround{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
 }
