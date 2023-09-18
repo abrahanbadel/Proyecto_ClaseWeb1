@@ -67,3 +67,50 @@ div>p{
     justify-content: space-around;
     text-align: center;
 }
+
+#flexContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#gridContainer{
+    display: grid;
+    grid-template-columns: 30% 30% auto;
+    /* column-gap: 20px;
+    row-gap: 20px; */
+    gap: 20px;
+    grid-template-rows: 100px 400px; 
+}
+
+div#flexContainer > div{
+    width: 400px;
+    border: 1px solid red;
+    margin-right: 20px;
+    margin-top: 20px;
+    
+}
+
+div#gridContainer > div{
+    border: 1px solid yellow;
+}
+
+#gridArea{
+    display: grid;
+    grid-template-areas: 'encabezado encabezado  encabezado aside' 'encabezado intermedio intermedio aside' 'encabezado encabezado encabezado aside';
+    
+}
+
+#divUno{
+    grid-area: encabezado;
+    background-color: azure;
+}
+
+#divDos{
+    grid-area: intermedio;
+    background-color: aquamarine;
+}
+
+#divTres{
+    grid-area: aside;
+    background-color: blueviolet;
+}
