@@ -1,14 +1,22 @@
 <script>
 /* dados 2 numeros, mostrar si son primos relativos entre si. */
 
-    var numeroUno = 7;
-    var numeroDos =3;
+    var numeroUno =10;
+    var numeroDos =8;
+    var sonPrimosRelativos = true;
 
-    for (let i = 2; i < numeroDos; i++) {
+    for (let i = 2; i < numeroDos && sonPrimosRelativos; i++) {
        
         if (numeroUno % i == 0 && numeroDos % i == 0) {
-            console.log("no son primos relativos")
+            sonPrimosRelativos = false;
         } 
+
+        if (sonPrimosRelativos) {
+            console.log("son primos relativos");
+            
+        } else {
+            console.log("no son primos relativos");
+        }
     }
 
 </script>
