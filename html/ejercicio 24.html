@@ -20,9 +20,11 @@
     h1.innerHTML = "ejemplo js";
 
 // codigo despues dee la funcion crearNodo
-    crearNodo("p", "el mundo cambia con un click");
-    crearNodo("h2", "back end");
+   var p = crearNodoTexto("p", "el mundo cambia con un click");
+   var h2 = crearNodoTexto("h2", "back end");
 
+   adicionarNodoBody(p);
+   adicionarNodoBody(h2);
     /* codigo antes de la funcion crear nodo
 
     var p = document.createElement("p");

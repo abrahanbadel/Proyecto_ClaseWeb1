@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemplo javaScript</title>
+<script src="../js/utilidades.js"></script>
+</head>
+
+<body>
+<script>
+
+   var h1 = crearNodoTexto("h1", "ejemplo JavaScript");
+   adicionarNodoBody(h1);
+
+   var p = crearNodoTexto("p", "JS es un lenguaje de programacion");
+   adicionarNodoBody(p);
+
+    var img = crearNodoImagen("../recursos/imagenes/github logo.png", "imagen decorativa");
+    adicionarNodoBody(img);
+
+
+    var h2 = crearNodoTexto("h2", "noticias");
+   adicionarNodoBody(h2);
+
+
+   var ul = crearNodo("ul");
+   var liUno = crearNodoTexto("li", "AWS");
+   var liDos = crearNodoTexto("li", "GCP");
+   var liTres = crearNodoTexto("li", "Azure");
+
+   adicionarNodoContenedor(ul, liUno)
+   adicionarNodoContenedor(ul, liDos)
+   adicionarNodoContenedor(ul, liTres)
+
+   adicionarNodoBody(ul);
+
+
+
+   var h1 = crearNodoTexto("h1", "quick table of contents");
+   adicionarNodoBody(h1);
+
+   
+
+   var ul = crearNodo("ul");
+   var liUno = crearNodoTexto("li", "a");
+   var liDos = crearNodoTexto("li", "a1");
+   var liTres = crearNodoTexto("li", "a2");
+   adicionarNodoBody(ul);
+
+   var a = crearNodoA("ejemplo", "#");
+adicionarNodoBody(a);
+
+
+  
+
+</script>
+
+</body>
+</html>
