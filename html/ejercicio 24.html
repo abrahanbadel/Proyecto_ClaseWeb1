@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemplo JS</title>
+
+    <script src="../js/utilidades.js"></script>
+    
+</head>
+
+<body>
+
+   <h1 id="titulo" >ejemplo</h1>
+    <p id="texto" >el front end es mejor que el back end</p>
+
+   <script>
+    var h1 = document.getElementById("titulo");
+    h1.innerHTML = "ejemplo js";
+
+// codigo despues dee la funcion crearNodo
+    crearNodo("p", "el mundo cambia con un click");
+    crearNodo("h2", "back end");
+
+    /* codigo antes de la funcion crear nodo
+
+    var p = document.createElement("p");
+    var textoP = document.createTextNode("el mundo cambia con un click");
+    p.appendChild(textoP);
+    document.body.appendChild(p);
+
+    var h2 = document.createElement("h2");
+    var textoH2 = document.createTextNode("backEnd");
+    h2.appendChild(textoH2);
+    document.body.appendChild(h2);
+*/
+    var pDos = document.getElementById("texto");
+    pDos.remove();
+        </script>
+
+</body>
+
+</html>
